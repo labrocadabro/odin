@@ -23,6 +23,12 @@
 
 html {
     font-size: 62.5%;
+    background-color: black;
+}
+body {
+    width: 90%;
+    background-color: #1f2937;
+    margin: 0 auto;
 }
 
 
@@ -30,7 +36,23 @@ html {
 /* LAYOUT
 /*******************************************/
 
+nav, section, nav ul {
+    display: flex;
+}
+nav h3, nav li, nav ul, .hero section, .hero img, .random figure {
+    flex: 1;
+}
+
+
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+.random, .cta {
+    background-color: white;
+}
+
+.quote {
+    background-color: #e5e7eb;
+}
