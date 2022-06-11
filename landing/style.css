@@ -29,6 +29,8 @@ body {
     width: 90%;
     background-color: #1f2937;
     margin: 0 auto;
+    color: white;
+    font-family: sans-serif;
 }
 
 
@@ -36,23 +38,139 @@ body {
 /* LAYOUT
 /*******************************************/
 
-nav, section, nav ul {
+nav, nav ul, .hero, .hero-img, .info div {
     display: flex;
 }
-nav h3, nav li, nav ul, .hero section, .hero img, .random figure {
+nav h3, nav li, nav ul, .hero-txt, .hero-img, .info figure {
     flex: 1;
 }
-
-
-
+.hero, nav {
+    justify-content: space-between;
+}
+.hero-img {
+    align-items: center;
+    justify-content: center;
+}
+.info div {
+    justify-content: space-around;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
-
-.random, .cta {
-    background-color: white;
+section {
+    padding: 100px 200px;
 }
-
+nav {
+    padding: 20px 200px;
+}
+.logo {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #f9faf8;
+}
+nav ul {
+    text-align: right;
+}
+nav a {
+    font-size: 1.8rem;
+    color: #e5e7eb;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+.hero h1 {
+    font: bolder 4.8rem sans-serif;
+    color: #f9faf8;
+    margin-bottom: 1rem;
+}
+.hero p {
+    font-size: 1.8rem;
+    color: #e5e7eb;  
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+}
+.hero-txt {
+    width: 450px;
+    padding-right: 50px;
+}
+.hero-img {
+    background-color: #6D747D;
+}
+.link-button {
+    background-color: #3882f6;
+    display: inline-block;
+    color: #e5e7eb;
+    font-size: 1.8rem;
+    padding: 1rem 3.5rem;
+    text-decoration: none;
+    border-radius: 7px;
+}
+.info {
+    background-color: #fff;
+    color: #1f2937;
+}
+.info h2 {
+    font: bolder 3.6rem sans-serif;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.info figure {
+    max-width: 166px;
+}
+.info img {
+    border: 4px solid #3882f6;
+    /* if there were actual images, these would be set to max-height and max-width */
+    height: 160px;
+    width: 160px;
+    border-radius: 15px;
+}
+.info figcaption {
+    font-size: 1.8rem;
+    color: #797f86;
+    text-align: center;
+}
 .quote {
     background-color: #e5e7eb;
+    color: #1f2937;
+}
+.quote figure {
+    padding : 0 100px;
+}
+.quote blockquote {
+    font-size: 3.6rem;
+    font-weight: lighter;
+    font-style: italic;
+    line-height: 4rem;
+}
+.quote figcaption {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: right;
+}
+.cta {
+    background-color: white;
+}
+.cta-box {
+    background-color: #3882f6;
+    border-radius: 7px;
+    padding: 50px 120px;
+    color: #e5e7eb;
+}
+.cta-box h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.cta-box p {
+    font-size: 1.8rem;
+}
+.cta-box a {
+    float: right;
+    border: 3px solid #fff;
+}
+
+footer {
+    font-size: 2rem;
+    text-align: center;
+    padding: 40px 0;
 }
