@@ -5,7 +5,8 @@ let options = document.getElementsByTagName('figure')
         options[i].addEventListener("click", result);
     }
 
-function result() {
-    
+function result(e) {
+    let chosen = e.currentTarget.cloneNode(true);
+    document.getElementById("options").appendChild(chosen);
 }
 //e.target.style.color ="black"
