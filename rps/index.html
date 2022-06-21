@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    	<meta name="description" content="Play a game of rock, paper, scissors." />
-    	<meta name="keywords" content="rock, paper, scissors" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="css/normalize.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<title>Rock Paper Scissors Game</title>
-	</head>
-	<body>
-		<h1>Let's Play Rock Paper Scissors</h1>
-		<section id="choose">
-			<h2>Make your choice:</h2>
-				<div id ="options">	
-				<figure>
-					<img src="img/rock.png" alt="Rock">
-					<figcaption>Rock</figcaption>
-				</figure>
-				<figure>
-					<img src="img/paper.png" alt="Paper">
-					<figcaption>Paper</figcaption>
-				</figure>
-				<figure>
-					<img src="img/scissors.png" alt="Scissors">
-					<figcaption>Scissors</figcaption>
-				</figure>
-			</div>
-		</section>
-		
-		<section id="match"></section>
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+<head>
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="description" content="Play a game of rock, paper, scissors." />
+   <meta name="keywords" content="rock, paper, scissors" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/normalize.css" />
+   <link rel="stylesheet" href="css/style.css" />
+   <title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+   <h1>Let's Play Rock Paper Scissors</h1>
+   <section id="choose">
+      <h2>Make your choice:</h2>
+      <div id="options">
+         <figure class="rock">
+            <img src="img/rock.png" alt="Rock">
+            <figcaption>Rock</figcaption>
+         </figure>
+         <figure class="paper">
+            <img src="img/paper.png" alt="Paper">
+            <figcaption>Paper</figcaption>
+         </figure>
+         <figure class="scissors">
+            <img src="img/scissors.png" alt="Scissors">
+            <figcaption>Scissors</figcaption>
+         </figure>
+      </div>
+   </section>
+
+   <section id="result">
+      <div id="player">
+         <h2>You chose:</h2>
+      </div>
+      <div id="ai">
+         <h2>I chose:</h2>
+      </div>
+   </section>
+   <section id="winner">
+      <h3></h3>
+   </section>
+
+   <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
